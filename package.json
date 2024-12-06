@@ -1,0 +1,29 @@
+{
+    "name": "landing-pages",
+    "version": "1.0.0",
+    "description": "beautiful landing pages",
+    "main": "index.js",
+    "scripts": {
+      "start:tailwind": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind-runtime.css --watch",
+      "build:tailwind": "tailwindcss -i ./css/tailwind.css -o ./css/tailwind-build.css --minify",
+      "build": "npm run build:tailwind",
+      "dev": "npm run start:tailwind"
+    },
+    "keywords": [
+      "landing",
+      "pages",
+      "motion",
+      "design",
+      "websites"
+    ],
+    "author": "Paul",
+    "license": "MIT",
+    "devDependencies": {
+      "tailwindcss": "^3.4.1"
+    },
+    "dependencies": {
+      "postcss": "^8.4.33",
+      "postcss-simple-vars": "^7.0.1"
+    }
+  }
+  
